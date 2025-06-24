@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preuro - Project Roadmap</title>
+    <style>
+        /* Estilos copiados do site principal para consistência */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0A192F;
+            color: #CCD6F6;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+        h1, h2, h3 { color: #FFFFFF; font-weight: 600; margin-bottom: 20px; }
+        h1 { font-size: 2.8rem; text-align: center; margin-bottom: 50px; }
+        h2 { font-size: 2rem; border-bottom: 1px solid #112240; padding-bottom: 10px; margin-top: 40px;}
+        p, li { margin-bottom: 15px; }
+        ul { list-style: none; }
+        strong { color: #FFD700; }
+        a { color: #FFD700; text-decoration: none; }
+        .roadmap-header { text-align: center; padding: 20px; background-color: #112240; }
+        .roadmap-header a { background-color: #FFD700; color: #0A192F; padding: 10px 20px; border-radius: 5px; font-weight: bold; }
+        
+        /* Estilos para a fase do roadmap e barra de progresso */
+        .phase {
+            background-color: #112240;
+            padding: 25px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        .phase-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .phase-status {
+            font-size: 1rem;
+            font-weight: normal;
+            color: #FFD700;
+        }
+        .phase-item {
+            display: block;
+            margin-bottom: 5px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .phase-item::before {
+            content: '?';
+            color: #FFD700;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .phase-item.pending::before {
+            content: '?';
+        }
+        .progress-bar-container {
+            width: 100%;
+            background-color: #0A192F;
+            border-radius: 5px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            width: 0; /* Definido pelo estilo inline */
+            height: 10px;
+            background-color: #FFD700;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="roadmap-header">
+        <a href="index.html">Back to Main Site</a>
+    </header>
+
+    <main class="container">
+        <h1>Preuro Project Roadmap</h1>
+
+        <div class="phase">
+            <h3 class="phase-title">Phase 1: Foundation <span class="phase-status">Completed ?</span></h3>
+            <ul>
+                <li class="phase-item">Concept & Philosophy Definition</li>
+                <li class="phase-item">Ecosystem Structure (10 Currencies)</li>
+                <li class="phase-item">$PREU Token Creation on Solana</li>
+                <li class="phase-item">Supply & Metadata Permanently Locked (Immutable)</li>
+                <li class="phase-item">Official Website & Social Channels Launch</li>
+                <li class="phase-item">Whitepaper v1.0 Release</li>
+            </ul>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+        </div>
+
+        <div class="phase">
+            <h3 class="phase-title">Phase 2: Community & Liquidity <span class="phase-status">In Progress ?</span></h3>
+            <ul>
+                <li class="phase-item pending">Community Growth Campaigns</li>
+                <li class="phase-item pending">Initial Liquidity Pool Creation on DEX</li>
+                <li class="phase-item pending">Official Public Trading Launch</li>
+                <li class="phase-item pending">CoinGecko & CoinMarketCap Listing</li>
+            </ul>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 15%;"></div>
+            </div>
+        </div>
+
+        <div class="phase">
+            <h3 class="phase-title">Phase 3: Ecosystem Expansion <span class="phase-status">Planned ???</span></h3>
+            <ul>
+                <li class="phase-item pending">First Community Vote for Historic Currency</li>
+                <li class="phase-item pending">Launch of First Historic Currency + Airdrop</li>
+                <li class="phase-item pending">$PREU Staking Mechanism Development</li>
+                <li class="phase-item pending">Annual Cycle of Voting & New Launches</li>
+            </ul>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 0%;"></div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
