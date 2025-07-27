@@ -1,0 +1,69 @@
+/* --- Importação da Fonte Poppins do Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- Variáveis de Cor e Fonte (Tema Preuro) --- */
+:root {
+    --bg-dark-blue: #0A0F1E;
+    --primary-electric-blue: #00BFFF;
+    --accent-gold: #FFD700;
+    --text-light-grey: #EAEAEA;
+    --font-main: 'Poppins', sans-serif;
+}
+
+/* --- Estilos Gerais e Reset --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    background-color: var(--bg-dark-blue);
+    color: var(--text-light-grey);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* --- Tipografia --- */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-electric-blue);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+p { margin-bottom: 1rem; }
+a { color: var(--primary-electric-blue); text-decoration: none; }
+strong { font-weight: 700; color: var(--accent-gold); }
+
+/* --- Estrutura & Cabeçalho --- */
+.container { width: 90%; max-width: 1100px; margin: auto; padding: 4rem 0; }
+header { padding: 1.5rem 0; border-bottom: 1px solid rgba(0, 191, 255, 0.1); }
+nav { display: flex; justify-content: space-between; align-items: center; width: 90%; max-width: 1100px; margin: auto; }
+.logo-image { height: 45px; width: auto; }
+.nav-links a { color: var(--text-light-grey); font-weight: 600; margin-left: 2rem; transition: color 0.3s; }
+.nav-links a:hover { color: var(--accent-gold); text-shadow: 0 0 8px var(--accent-gold); }
+
+/* --- Secção Principal (Hero) --- */
+.hero { text-align: center; min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.hero h1 { font-size: 3.5rem; line-height: 1.2; }
+.hero p { font-size: 1.2rem; max-width: 600px; margin: 1rem auto 2rem auto; }
+.btn { display: inline-block; padding: 15px 30px; font-weight: 700; border-radius: 5px; text-decoration: none; transition: transform 0.3s, box-shadow 0.3s; }
+.btn-accent { background-color: var(--accent-gold); border: 2px solid var(--accent-gold); color: #000; }
+.btn-accent:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2); }
+
+/* --- Página Roadmap --- */
+.roadmap-container { text-align: center; }
+.roadmap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; text-align: left; }
+.roadmap-card { background-color: #112240; padding: 2rem; border: 1px solid rgba(0, 191, 255, 0.2); border-radius: 8px; }
+.roadmap-card h3 { font-size: 1.25rem; }
+
+/* --- Página Vision / FAQ --- */
+.header-section, .conclusion-section { text-align: center; }
+.header-section p, .conclusion-section p { font-size: 1.2em; max-width: 800px; margin-left: auto; margin-right: auto; }
+.faq-section { margin-top: 40px; }
+.faq-section h2 { font-size: 1.8em; border-left: 3px solid var(--primary-electric-blue); padding-left: 15px; margin-bottom: 1.5rem; }
+.faq-section ul { list-style-position: inside; padding-left: 20px; }
+.faq-section li { margin-bottom: 0.5rem; }
+hr { border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 191, 255, 0), rgba(0, 191, 255, 0.2), rgba(0, 191, 255, 0)); margin: 40px 0; }
+
+/* --- Rodapé (Footer) --- */
+footer { text-align: center; padding: 2rem 0; margin-top: 2rem; font-size: 0.9rem; border-top: 1px solid rgba(0, 191, 255, 0.1); }
+.social-links a { margin: 0 15px; display: inline-block; }
+.social-links svg { width: 24px; height: 24px; fill: var(--text-light-grey); transition: fill 0.3s; }
+.social-links a:hover svg { fill: var(--primary-electric-blue); }
